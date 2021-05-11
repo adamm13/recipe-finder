@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {FormEvent, useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,12 +12,6 @@ function App() {
     return (await result.json()).results;
   }
 
-  const search = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement
-    const input = form.querySelector('searchText') as HTMLFormElement
-  }
-
   useEffect(() => {
     (async () => {
       const query = encodeURIComponent(recipeSearch);
@@ -27,6 +21,14 @@ function App() {
       }
     })();
   }, [recipeSearch]);
+
+  const search = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const input = form.querySelector('#searchText') as HTMLInputElement;
+    setRecipeSearch(input.value);
+    input.value = '';
+  };
 
   return (
     <div className="App">

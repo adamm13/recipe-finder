@@ -19,7 +19,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "api:serve": "node server",
+    "start:api": "node server",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
