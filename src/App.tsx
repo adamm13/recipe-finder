@@ -1,13 +1,14 @@
 import React, {FormEvent, useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { iRecipe } from './iRecipe'
 
 function App() {
 
-  const [recipesFound, setRecipesFound] = useState ([]);
+  const [recipesFound, setRecipesFound] = useState<iRecipe[]>([]);
   const [recipeSearch, setRecipeSearch] = useState ('');
 
-  const searchForRecipes = async (query: string): Promise<any> => {
+  const searchForRecipes = async (query: string): Promise<iRecipe[]> => {
     const result = await fetch(`http://localhost:3001/?search=${query}`)
     return (await result.json()).results;
   }
@@ -37,6 +38,8 @@ function App() {
         <input id = "searchText" type = "text"/>
         <button>Search</button>
       </form>
+      {recipeSearch && <p>Results for {recipeSearch}...</p>}
+      <div className="recipe-container"
     </div>
   );
 }
