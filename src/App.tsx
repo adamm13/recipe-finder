@@ -2,7 +2,7 @@ import React, {FormEvent, useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { iRecipe } from './iRecipe'
-import { RecipeComponent } from './RecipeComponent'
+import RecipeComponent from './RecipeComponent';
 
 function App() {
 
