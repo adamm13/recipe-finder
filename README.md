@@ -7,7 +7,7 @@ This App was built to practice using TypeScript and React. It uses axios in a pr
 ## Screenshots
 
 <p align="center">
-<img src=""/>
+<img src="https://github.com/adamm13/recipe-finder/blob/master/pics/receipes.gif"/>
 </p>
 
 ---
