@@ -2,6 +2,7 @@ import React, {FormEvent, useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { iRecipe } from './iRecipe'
+import { RecipeComponent } from './RecipeComponent'
 
 function App() {
 
@@ -39,7 +40,12 @@ function App() {
         <button>Search</button>
       </form>
       {recipeSearch && <p>Results for {recipeSearch}...</p>}
-      <div className="recipe-container"
+      <div className="recipes-container">
+        {recipesFound.length &&
+          recipesFound.map(recipe =>
+            (<RecipeComponent key={recipe.href} recipe={recipe}></RecipeComponent>))
+        }
+      </div>
     </div>
   );
 }
