@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Recipe Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This App was built to practice using TypeScript and React. It uses axios in a proxy server to call the [Recipe Puppy API](http://www.recipepuppy.com/about/api/). This tutorial explained how TypeScript can be used in react to write cleaner, less buggy code by using custom [TypeScript Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+<p align="center">
+<img src=""/>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Simple search bar which returns recipies based on user input
+- Individual recipe cards feature the ingredients needed and a link to the external recipe website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- TypeScript, React, Javascript, Axios, Chalk, Recipe Puppy API, 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. Fork this repository, then clone your fork of this repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Install dependencies using the `npm install` command.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the web server using the `npm start` command. The app will be served at [http://localhost:8080/](http://localhost:8080/.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Go to [http://localhost:8080/](http://localhost:8080/) in your browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- @testing-library/jest-dom": "^5.11.9"
+- @testing-library/react": "^11.2.5"
+- @testing-library/user-event": "^12.8.1"
+- @types/jest": "^26.0.20"
+- @types/node": "^12.20.4"
+- @types/react": "^17.0.2"
+- @types/react-dom": "^17.0.1"
+- axios": "^0.21.1"
+- chalk": "^4.1.0"
+- react": "^17.0.1"
+- react-dom": "^17.0.1"
+- react-scripts": "4.0.3"
+- typescript": "^4.2.2"
+- web-vitals": "^1.1.0"
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+ 
