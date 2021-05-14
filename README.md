@@ -31,9 +31,9 @@ This App was built to practice using TypeScript and React. It uses axios in a pr
 
 2. Install dependencies using the `npm install` command.
 
-3. Start the web server using the `npm start` command. The app will be served at [http://localhost:3000/](http://localhost:3000/.
+3. Start the web server using the `npm start` command. The app will be served at [http://localhost:3000/](http://localhost:3000/).
 
-3. Start the proxy server using the `npm start:api` command. The app will be served at [http://localhost:3001/](http://localhost:3001/.
+3. Start the proxy server using the `npm start:api` command. The app will be served at [http://localhost:3001/](http://localhost:3001/).
 
 4. Go to [http://localhost:3000/](http://localhost:3000/) & [http://localhost:3001/](http://localhost:3001/) in your browser.
 
