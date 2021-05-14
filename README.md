@@ -1,6 +1,6 @@
 # Recipe Finder
 
-This App was built to practice using TypeScript and React. It uses axios in a proxy server to call the [Recipe Puppy API](http://www.recipepuppy.com/about/api/). This tutorial explained how TypeScript can be used in react to write cleaner, less buggy code by using custom [TypeScript Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html).
+This App was built to practice using TypeScript and React. It uses axios in a proxy server to call the [Recipe Puppy API](http://www.recipepuppy.com/about/api/) to return the queried results. This [tutorial](https://www.youtube.com/watch?v=Kff25n75jqA&ab_channel=JuniorDeveloperCentral) explained how TypeScript can be used in react to write cleaner, less buggy code by using custom [TypeScript Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html).
 
 ---
 
